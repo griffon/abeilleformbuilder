@@ -30,17 +30,6 @@ public class AbeilleFormBuilder extends SwingBuilder {
     super(init)
   }
 
-  // taken from groovy.swing.SwingBuilder
-  /*
-   public static objectIDAttributeDelegate(def builder, def node, def attributes) {
-      def idAttr = builder.getAt(DELEGATE_PROPERTY_OBJECT_ID) ?: DEFAULT_DELEGATE_PROPERTY_OBJECT_ID
-      def theID = attributes.remove(idAttr)
-      if (theID) {
-          builder.setVariable(theID, node)
-      }
-   }
-   */
-
   def registerAbeilleForm() {
     registerFactory("formPanel", new FormPanelFactory())
   }
